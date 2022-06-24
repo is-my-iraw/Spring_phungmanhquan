@@ -36,13 +36,6 @@
         </div>
     </div>
 </div>
-<form th:action="@{/search}" method="get">
-    <fieldset class="form-group">
-    <input type="text" name="keyword" th:value="${keyword}"  placeholder="Find by Owner Name & Shop Type" class="form-control" size="50px" >
-    </fieldset>
-    <button type="submit" class="btn btn-success" >Search</button>
-    <button type="submit" class="btn btn-success" >Reset</button>
-</form>
 <div class="row">
     <div class="container">
         <h3 class="text-center">List of Users</h3>

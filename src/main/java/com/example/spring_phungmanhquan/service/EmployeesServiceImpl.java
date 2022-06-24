@@ -22,8 +22,4 @@ public class EmployeesServiceImpl implements EmployeesService{
         return employeesRepo.save(employee);
     }
 
-    @Override
-    public List<Employee> search(String name) {
-        return employeesRepo.searchUserByName(name);
-    }
 }

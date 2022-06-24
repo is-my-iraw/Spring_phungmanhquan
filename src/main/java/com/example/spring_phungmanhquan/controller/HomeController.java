@@ -33,14 +33,5 @@ public class HomeController {
         return "redirect:index";
     }
 
-    @RequestMapping(path = {"/","/search"})
-    public String home(Employee employee, Model model, String name) {
-        if(name!=null) {
-            List<Employee> list = employeesService.search(name);
-            model.addAttribute("list", list);
-        }else {
-            List<Employee> list = employeesService.findAllEmployees();
-            model.addAttribute("list", list);}
-        return "index";
-    }
+
 }

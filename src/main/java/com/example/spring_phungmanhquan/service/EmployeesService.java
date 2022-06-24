@@ -8,6 +8,5 @@ public interface EmployeesService {
     List<Employee> findAllEmployees ();
     Employee createEmployees(Employee employee);
 
-    List<Employee> search(String name);
 
 }
